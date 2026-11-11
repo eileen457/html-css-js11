@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+
+  position:absolute;
+  z-index:10;
+  background-color: white;
+}
+
+li { 
+  list-style-type: none; 
+  padding: 8px 18px;        /* crea el cuadro */
+  width: 100%;              /* ocupa todo el ancho */
+  cursor: pointer;          /* cursor de botón */
+background-color: white; 
+display:block;
+text-align: center;
+
+}
+
+ li:hover{
+  cursor: pointer;
+
+ background-color: #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+ }
+
+ #theme-switcher-button{
+  background-color: pink;
+  border:none;
+  padding:10px;
+ }
+
+ #theme-switcher-button:hover{
+  cursor: pointer;
+ }
+
+
+#theme-status{
+  display:block;
+text-align: center;
+
+position:relative;
+z-index:1;
+}
+
+.theme-dark #theme-status {
+  color: white;
+}
+
+.theme-frost #theme-status{
+  color:white;
+}
